@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #645afa; /* White background */
+            padding: 20px;
+            text-align: center;
+            color: #000; /* Black text */
+            animation: fadeIn 2s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #000; /* Black text */
+            text-align: center;
+            animation: slideInFromLeft 1s;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .project, form {
+            background-color: #fff; /* White background */
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #000; /* Black border */
+            box-shadow: 0 0 10px #000;
+            animation: fadeInUp 1s;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover, form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px #000;
+        }
+
+        a {
+            color: #000; /* Black text */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #555; /* Darker grey on hover */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #000; /* Black border */
+            border-radius: 0; /* Square corners */
+            box-sizing: border-box;
+            background-color: #fff; /* White input background */
+            color: #000; /* Black text */
+        }
+
+        input[type="submit"] {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0; /* Square corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555; /* Dark grey on hover */
+            transform: scale(1.05);
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #fff; /* White background */
+            text-align: center;
+            border-bottom: 1px solid #000; /* Black border */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: #000; /* Black text */
+            text-decoration: none;
+            padding: 5px;
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ccc; /* Light grey on hover */
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>My Portfolio</h1>
+        <p>Tella's Portfolio</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>My name is Tella Adebola. I'm a dedicated and experienced web developer with a passion for creating innovative, user-friendly websites. With a keen eye for design and a strong technical skill set, I strive to deliver high-quality solutions tailored to meet the unique needs of each project.</p>
+                    <p>My journey in web development began with a fascination for technology and a desire to make a meaningful impact in the digital world. Over the years, I've honed my expertise in front-end and back-end development, mastering languages and frameworks such as HTML, CSS, JavaScript, and Python.</p>
+                    <p>What sets me apart is my commitment to continuous learning and adaptability. In an ever-evolving field like web development, staying up-to-date with the latest trends and technologies is essential. Whether it's exploring new frameworks, improving performance optimization techniques, or enhancing user experience through responsive design, I'm always eager to expand my knowledge and skill set.</p>
+                    <p>When I'm not coding, you can find me exploring new coding challenges, contributing to open-source projects, or seeking inspiration from the world around me. I believe that great web development goes beyond writing code – it's about crafting meaningful experiences that leave a lasting impression.</p>
+                    <p>I'm excited about the opportunity to collaborate on innovative projects and bring creative ideas to life. Let's connect and explore how we can work together to achieve your goals!</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A Simple Working Calculator</p>
+                <a href="project1.html">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A Weight Converter</p>
+                <a href="project2.html">View Project</a>
+            </div> 
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
